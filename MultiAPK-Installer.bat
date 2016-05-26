@@ -14,7 +14,7 @@ cls
 echo.
 title ADB APK Installer 
 :again
-for %%f in (*.apk*) do @echo Transferring %%f to device && adb install %%%f% && echo.
+for %%f in (*.apk*) do @echo Transferring %%f to device && adb install "%%f" && echo.
 
 :done
 echo Press any key to exit the Installer.
